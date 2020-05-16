@@ -54,11 +54,6 @@ Route::prefix('user')->name('user.')->namespace('User')->group(function () {
         Route::get('service/contact', 'ServiceController@contact')->name('service.contact');
         Route::get('service/monitor', 'ServiceController@monitor')->name('service.monitor');
 
-        // Ramal
-        Route::get('ramal', 'RamalController@index')->name('ramal.index');
-        Route::post('ramal/save', 'RamalController@save')->name('ramal.save');
-        Route::get('ramal/edit/{id}', 'RamalController@edit')->name('ramal.edit');
-        Route::get('ramal/print/{id}', 'RamalController@print')->name('ramal.print');
 
         // Trunk
         Route::get('trunk', 'TrunkController@index')->name('trunk.index');
